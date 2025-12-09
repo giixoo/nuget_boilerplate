@@ -79,7 +79,7 @@ I'm using an MIT license, but you can set a license that fits your needs better
 missing readme file we can fix by adding the following in .csproj: 
 
 ```xml
-	<PropertyGroup>
+    <PropertyGroup>
         ...
 		<PackageReadmeFile>README.md</PackageReadmeFile>
         ...
