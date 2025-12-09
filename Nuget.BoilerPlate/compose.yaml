@@ -1,0 +1,7 @@
+﻿services:
+  nuget.boilerplate:
+    image: nuget.boilerplate
+    build:
+      context: .
+      dockerfile: Nuget.BoilerPlate/Dockerfile
+
