@@ -23,6 +23,6 @@ jobs:
     - name: Restore dependencies
       working-directory: Nuget.BoilerPlate
       run: dotnet restore
-    - name: Build
+    - name: Pack
       working-directory: Nuget.BoilerPlate
-      run: dotnet build --no-restore
+      run: dotnet pack -c Release --no-restore
