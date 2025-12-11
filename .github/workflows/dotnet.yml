@@ -20,8 +20,9 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
-    - working-directory: Nuget.BoilerPlate
     - name: Restore dependencies
+      working-directory: Nuget.BoilerPlate
       run: dotnet restore
     - name: Build
+      working-directory: Nuget.BoilerPlate
       run: dotnet build --no-restore
