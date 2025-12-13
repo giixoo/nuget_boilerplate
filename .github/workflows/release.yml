@@ -17,13 +17,13 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Use Tag as Version
-      # id: get_version
+      id: get_version
       run: |
         # The tag name (e.g., v1.0.0) is available in the GitHub context
         VERSION=${{ github.event.release.tag_name }}
           
         # Optional: Remove a common prefix like 'v' if needed (e.g., v1.0.0 -> 1.0.0)
-        VERSION_NUMBER="${VERSION#v}" 
+        # VERSION_NUMBER="${VERSION#v}" 
           
         # Set the version as an output variable for use in later steps
         echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
